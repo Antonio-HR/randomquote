@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var url = new Array();
 		switch(event.target.id){
 			case 'twtButton':
-				url = ["https://twitter.com/intent/tweet?text="+quote+"&via=a_ahr1&url=https://quotesondesign.com/api-v4-0/", "Twitter", "width=690,height=253"];
+				url = ["https://twitter.com/intent/tweet?text="+quote+"&via=a_ahr1&url=https://antonio-hr.github.io/randomquote/", "Twitter", "width=690,height=253"];
 				break
 			case 'fbButton':
 				url = ["https://www.facebook.com/sharer/sharer.php?u=https://antonio-hr.github.io/randomquote/", "_blank", "width=690,height=253"];
