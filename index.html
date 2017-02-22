@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+
+<html lang = "es" prefix="og: http://ogp.me/ns#">
+
+	<head>
+
+		<meta charset = "UTF-8">
+		<meta name = "keywords" content = ""> 
+		<meta name = "description" content =""> 
+		<meta name = "author" content = "Antonio Hernandez">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:image" content="img/portada.png" />
+		
+		<link rel = "shortcut icon" href= "img/favicon.png" type="image/png" sizes="16x16">
+		<link rel = "stylesheet" type = "text/css" href= "style.css">
+		
+		<title>Random Quote Machine</title>
+		
+	</head>
+
+	<body>
+		<div class="container">
+		 	<h1>Random Quote Machine</h1>
+		 	<div><p id="ad">You can read some famous quotes from important designers around the world. Data are from the API of <a href="https://quotesondesign.com/api-v4-0/">Quotes on Design</a>.</p></div>
+		 	<button id='mainButton'>get new quote</button>
+			<div id="quote">
+
+			</div>
+			<div id="rrss">
+				<button class="rrssButton" id="twtButton">
+					<img src="img/twtIcon.png">Tweet
+				</button>
+				<button class="rrssButton" id="fbButton">
+					<img src="img/fbLogo.png">Facebook
+				</button>
+			</div>
+			<footer>
+				<author>Antonio Hernández</author>
+			</footer>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="script.js"></script>
+		
+	</body>
+</html>

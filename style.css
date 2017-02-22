@@ -1,0 +1,152 @@
+/*FONTS */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+/*VARIABLES */
+/*STYLES */
+body {
+  background-color: #004d80;
+  margin-top: 0.5em;
+}
+
+h1{
+  margin-bottom: 1em;
+  font-size: 2.25em;
+  color: #a0d9ff;
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+}
+
+.container {
+  width: 45%;
+  margin: auto;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: #1f84c6;
+}
+#ad{
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 1em;
+  text-align: center;
+  color: #a0d9ff;
+}
+#quote {
+  background-color: #007acc;
+  font-family: arial;
+  color: white;
+  padding: 0.1em 1em 0.1em 1em;
+  border: 2px;
+  border-radius: 15px;
+}
+#quote p:nth-child(1){
+  font-family: arial;
+  font-size: 1.6em;
+  color: white;
+}
+#quote p:nth-child(2){
+  font-style: italic;
+  font-family: "Lora", serif;
+  font-size: 1.25em;
+}
+
+p {
+ /** margin: 0em 1em;**/
+}
+
+
+#mainButton {
+  width: 25%;
+  display: block;
+  border-radius: 10px;
+  cursor: hand;
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#mainButton:hover {
+    cursor: pointer;
+}
+
+#rrss{
+  margin-top: 1em;
+}
+
+.rrssButton{
+  display: block;
+  padding: 5px;;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: arial;
+  text-decoration:none;
+}
+
+#twtButton{
+  width: 75px;
+  height: 32px;
+  margin-right: 8px;
+  float: left;
+  background-color: #1b95e0;
+}
+
+#fbButton{
+  width: 102px;
+  float: left;
+  background-color: #3b5998;
+}
+
+.rrssButton:hover{
+  color:white;
+}
+
+#twtButton img{
+  width: 16px;
+  margin-right: 5px;
+}
+
+#fbButton img{
+  width: 8px;
+  margin-right: 5px;
+}
+
+footer{
+  padding-top: 50px;
+}
+footer author{
+  font-family: arial;
+  color: white;
+  font-size: 1em;
+  margin-left: 40%;
+}
+
+@media only screen and (max-width: 1025px) {
+    .container {
+      width: 90%;
+    }
+    footer author{     
+      margin-left: 42%;
+}
+
+@media only screen and (max-width: 760px) {
+  h1{
+    font-size: 1.5em;
+  }
+  #quote p:nth-child(1){
+  font-size: 1.2em;
+  }
+  #quote p:nth-child(2){
+  font-size: 1em;
+  }
+  #mainButton{
+      width: 40%;
+    }
+
+  footer author{     
+      margin-left: 30%;
+}
