@@ -5,7 +5,8 @@ $(document).ready(function(){
 
 	
 	function rrssButton(){
-		var quote = $('#quote').text().replace(':',': ');
+		var quote = $('#quote');
+		quote.text().replace(':',': ');
 		if(quote.length > 98){
 			quote.text().substring(0,98)+'...';
 		}
