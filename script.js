@@ -5,11 +5,11 @@ $(document).ready(function(){
 
 	
 	function rrssButton(){
-		var quote = $('#quote').text().replace(':',': ').substring(0, 101)+"...";
+		var quote = $('#quote').text().replace(':',': ').substring(0, 97)+"...";
 		var url = new Array();
 		switch(event.target.id){
 			case 'twtButton':
-				url = ["https://twitter.com/intent/tweet?text="+quote+"&via=a_ahr1&url=https://antonio-hr.github.io/randomquote/", "Twitter", "width=690,height=253"];
+				url = ["https://twitter.com/intent/tweet?text="+quote+"&via=anerodata&url=https://antonio-hr.github.io/randomquote/", "Twitter", "width=690,height=253"];
 				break
 			case 'fbButton':
 				url = ["https://www.facebook.com/sharer/sharer.php?u=https://antonio-hr.github.io/randomquote/", "_blank", "width=690,height=253"];
