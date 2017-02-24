@@ -7,7 +7,7 @@ $(document).ready(function(){
 	function rrssButton(){
 		var quote = $('#quote').text().replace(':',': ');
 		if(quote.length > 98){
-			quote.substring(0,98)+'...';
+			quote = quote.substring(0,98)+'...';
 		}
 		var url = new Array();
 		switch(event.target.id){
