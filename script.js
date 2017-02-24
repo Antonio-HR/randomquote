@@ -5,7 +5,10 @@ $(document).ready(function(){
 
 	
 	function rrssButton(){
-		var quote = $('#quote').text().replace(':',': ').substring(0, 97)+"...";
+		var quote = $('#quote').text().replace(':',': ');
+		if(quote.length > 98){
+			quote.text().substring(0,98)+'...';
+		}
 		var url = new Array();
 		switch(event.target.id){
 			case 'twtButton':
