@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('#mainButton').on('click', getQuote);
 	$('#mainButton').on('click', getQuote);
 		$('.rrssButton').on("click",function(event){
-		var titular = $('#quote').text().replace("%", "%25");
+		var quote = $('#quote').text().replace(':',': ').substring(0, 101)+"...";
 		var url = new Array();
 		event.preventDefault();
 		var id = $(this).attr('id');
@@ -17,6 +17,7 @@ $(document).ready(function(){
 		}
 		return window.open(url[0], url[1],url[2]);
 	});	
+
 
 	$(window).on('load', getQuote);
 		function getQuote(){
