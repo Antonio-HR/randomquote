@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('#mainButton').on('click', getQuote);
 	$('#mainButton').on('click', getQuote);
 		$('.rrssButton').on("click",function(event){
-		var titular = $('#titular').text().replace("%", "%25");
+		var titular = $('#quote').text().replace("%", "%25");
 		var url = new Array();
 		event.preventDefault();
 		var id = $(this).attr('id');
