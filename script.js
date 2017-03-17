@@ -1,17 +1,18 @@
 $(document).ready(function(){
 	
 	$('#mainButton').on('click', getQuote);
-	$('.rrssButton').on("click",function(event){
+	$('#mainButton').on('click', getQuote);
+		$('.rrssButton').on("click",function(event){
 		var titular = $('#titular').text().replace("%", "%25");
 		var url = new Array();
 		event.preventDefault();
 		var id = $(this).attr('id');
 		switch(id){
 			case 'twtButton':
-				url = ["https://twitter.com/intent/tweet?text="+titular+"&via=anerodata&url=http://sampledmining.esy.es", "Twitter", "width=690,height=253"];
+				url = ["https://twitter.com/intent/tweet?text="+quote+"&via=a_ahr1&url=https://quotesondesign.com/api-v4-0/", "Twitter", "width=690,height=253"];
 				break
 			case 'fbButton':
-				url = ["https://www.facebook.com/sharer/sharer.php?u=http://sampledmining.esy.es", "_blank", "width=690,height=253"];
+				url = ["https://www.facebook.com/sharer/sharer.php?u=https://antonio-hr.github.io/randomquote/", "_blank", "width=690,height=253"];
 				break
 		}
 		return window.open(url[0], url[1],url[2]);
