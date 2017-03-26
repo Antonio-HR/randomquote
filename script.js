@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('#mainButton').on('click', getQuote);
+	
 	$('#mainButton').on('click', getQuote);
 		$('.rrssButton').on("click",function(event){
 		var quote = $('#quote').text().replace(':',': ').substring(0, 101)+"...";
